@@ -142,12 +142,20 @@ nav a:hover {
     color: #B0BEC5;
 }
 
+
 .project-item img {
-    border-radius: 10px; /* Bordas arredondadas */
-    width: 100%; /* Ajusta a largura para ocupar todo o container */
-    max-width: 500px; /* Limita a largura máxima */
-    display: block; /* Remove espaçamentos adicionais */
-    margin: 0 auto; /* Centraliza a imagem */
+    width: 100%;
+    /* A largura será ajustada ao tamanho do container */
+    max-width: 600px;
+    /* Define uma largura máxima para telas maiores */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Remove espaço extra ao redor da imagem */
+    margin: 0 auto;
+    /* Centraliza a imagem dentro do container */
+    border-radius: 10px;
+    /* Torna as bordas ligeiramente arredondadas */
 }
 
 .carousel-dots {
