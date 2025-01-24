@@ -1,0 +1,279 @@
+/* Reset básico */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #B0BEC5;
+    /* Cinza claro */
+    background: #1E1E2F;
+    /* Fundo escuro azulado */
+    margin: 0;
+}
+
+header {
+    background: #12121C;
+    /* Fundo mais escuro */
+    color: #FFFFFF;
+    /* Texto branco */
+    padding: 20px 10%;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    /* Sombra */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #FF6F61;
+    /* Cor de destaque */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #FF6F61;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #FF6F61;
+    color: #12121C;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(to bottom, #2C3A47, #1E1E2F);
+    color: #FFFFFF;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.btn-primary {
+    background: #FF6F61;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background: #FFA07A;
+    transform: scale(1.05);
+}
+
+.about,
+.contact {
+    padding: 60px 10%;
+    background: #23233A;
+    /* Fundo escuro intermediário */
+    color: #B0BEC5;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FF6F61;
+}
+
+.about p,
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo do Carrossel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    /* Esconde os itens fora da área visível */
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Animação do deslize */
+}
+
+.project-item {
+    min-width: 100%;
+    /* Cada item ocupa 100% da largura visível */
+    padding: 20px;
+    background: #1E1E2F;
+    /* Fundo escuro */
+    border-radius: 8px;
+    text-align: center;
+    color: #B0BEC5;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-dots button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #B0BEC5;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-dots button.active {
+    background-color: #FF6F61;
+    /* Cor de destaque */
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    background: #1E1E2F;
+    color: #FFFFFF;
+}
+
+.contact form button {
+    background: #FF6F61;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contact form button:hover {
+    background: #FFA07A;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #B0BEC5;
+    background: #12121C;
+}
+
+/* Estilo da seção Projetos */
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FF6F61;
+    /* Cor de destaque */
+    text-align: left;
+    /* Alinhamento à esquerda */
+    padding-left: 10%;
+    /* Alinhamento à esquerda com a margem */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Espaçamento entre a imagem e o texto */
+}
+
+.about-photo {
+    width: 200px;
+    /* Aumente o valor para ampliar a largura */
+    height: 200px;
+    /* Aumente o valor para ampliar a altura */
+    border-radius: 50%;
+    /* Mantém o formato circular */
+    border: 4px solid #FF6F61;
+    /* Borda de destaque */
+    object-fit: cover;
+    /* Ajusta a imagem para caber no tamanho sem distorção */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra para profundidade */
+}
+
+#btnVoltarTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6F61;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+#btnVoltarTopo:hover {
+    background-color: #FFA07A;
+    transform: scale(1.1);
+}
+
+/* Mostra o botão quando visível */
+#btnVoltarTopo.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.google-form iframe {
+    width: 100%;
+    /* Ajusta a largura ao container */
+    max-width: 640px;
+    /* Limita a largura máxima */
+    border: none;
+    /* Remove bordas */
+    margin: 0 auto;
+    /* Centraliza o formulário */
+    display: block;
+}
