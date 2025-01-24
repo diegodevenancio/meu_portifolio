@@ -284,3 +284,25 @@ ul li input[type="checkbox"] {
         max-height: 120px; /* Menor altura para celulares */
     }
 }
+
+/* Ajustes adicionais para os botões ficarem responsivos */
+@media (max-width: 400px) {
+    .buttons button {
+        width: 100%;  /* Faz com que os botões ocupem toda a largura */
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .trash-button button {
+        width: 100%;  /* Faz com que o botão da lixeira ocupe toda a largura */
+        padding: 10px;
+    }
+
+    #taskInput {
+        width: 100%; /* Ajusta o campo de entrada */
+    }
+
+    .tasks-container {
+        max-height: 100px; /* Ajusta altura da lista */
+    }
+}
