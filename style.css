@@ -294,3 +294,25 @@ footer {
     display: block;
 }
 
+
+
+
+
+/* Adicione ao final do arquivo style.css ou equivalente */
+@media (max-width: 768px) {
+    /* Ajuste para tablets */
+    .project-item img {
+        max-width: 90%; /* Reduz a largura máxima */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajuste para celulares */
+    .project-item img {
+        max-width: 100%; /* Imagem ocupa toda a largura disponível */
+    }
+    
+    .carousel {
+        border-radius: 5px; /* Ajusta o arredondamento para telas menores */
+    }
+}
