@@ -206,3 +206,81 @@ ul li input[type="checkbox"] {
 .tasks-container::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.1);
 }
+
+
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #taskInput {
+        width: calc(100% - 100px); /* Reduz espaço para o botão */
+        font-size: 0.9rem;
+    }
+
+    #addTaskButton {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .tasks-container {
+        max-height: 150px; /* Reduz a altura para telas menores */
+    }
+}
+
+/* Ajustes para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    #taskInput {
+        width: calc(100% - 90px); /* Ajusta espaço para o botão */
+        font-size: 0.8rem;
+    }
+
+    #addTaskButton {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    button {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+
+    ul li {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .trash-button button {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+
+    .tasks-container {
+        max-height: 120px; /* Menor altura para celulares */
+    }
+}
