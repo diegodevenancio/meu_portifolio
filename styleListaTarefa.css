@@ -1,0 +1,208 @@
+/* Reset básico para consistência */
+body, h1, h2, ul, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container principal */
+main {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Header */
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ff6f61;
+    font-weight: 700;
+}
+
+/* Campo de entrada */
+.task-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#taskInput {
+    width: calc(100% - 120px); /* Ajuste para o botão "Adicionar" */
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#taskInput:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+    border-color: #ff6f61;
+}
+
+#addTaskButton {
+    padding: 10px 15px;
+    background: #28a745;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#addTaskButton:hover {
+    background: #218838;
+}
+
+/* Botões principais */
+.buttons {
+    text-align: center; /* Centraliza os botões */
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;  /* Centraliza os botões na linha */
+    gap: 5px;  /* Espaçamento entre os botões */
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.5);
+}
+
+/* Botão "Lixeira" abaixo dos botões */
+.trash-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Botão "Lixeira" abaixo dos botões */
+.trash-button button {
+    background: #ff6f61; /* Cor igual ao título */
+    color: #fff; /* Cor da escrita em branco */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.trash-button button:hover {
+    background: #d94a3a; /* Tom mais escuro de vermelho para o hover */
+    box-shadow: 0px 5px 15px rgba(255, 111, 97, 0.5);
+}
+
+
+/* Lista de tarefas */
+.tasks-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+}
+
+ul li input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Botões na lixeira */
+#restoreSelectedButton,
+#deletePermanentlyButton,
+#restoreAllButton,
+#deleteAllDeletedTasksButton {
+    background: #007bff;
+    margin-top: 5px;
+}
+
+#restoreSelectedButton:hover,
+#deletePermanentlyButton:hover,
+#restoreAllButton:hover,
+#deleteAllDeletedTasksButton:hover {
+    background: #0056b3;
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.5);
+}
+
+/* Scroll customizado */
+.tasks-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.tasks-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}

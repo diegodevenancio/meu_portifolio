@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="styleListaTarefa.css">
+</head>
+<body>
+    <main>
+        <!-- Cabeçalho com o título -->
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+
+        <!-- Campo de entrada e botão "Adicionar" -->
+        <div class="task-input-container">
+            <input type="text" id="taskInput" placeholder="Nova tarefa">
+            <button id="addTaskButton">Adicionar</button>
+        </div>
+
+        <!-- Lista de tarefas em um container -->
+        <div class="tasks-container">
+            <h2>Tarefas</h2>
+            <ul id="taskList"></ul>
+        </div>
+
+        <!-- Botões de ações -->
+        <div class="buttons">
+            <button id="deleteSelectedTasksButton">Excluir Selecionadas</button>
+            <button id="deleteAllTasksButton">Excluir Todas</button>
+        </div>
+
+        <!-- Botão "Lixeira" abaixo dos botões -->
+        <div class="trash-button">
+            <button onclick="location.href='lixeira.html'">Lixeira</button>
+        </div>
+    </main>
+
+    <!-- Script JavaScript -->
+    <script src="scriptListaTarefa.js"></script>
+</body>
+</html>

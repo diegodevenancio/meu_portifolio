@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lixeira</title>
+    <link rel="stylesheet" href="styleListaTarefa.css">
+</head>
+<body>
+    <main>
+        <!-- Cabeçalho com o título -->
+        <header>
+            <h1>Lixeira</h1>
+            <nav>
+                <button onclick="location.href='listaTarefa.html'">Voltar</button>
+            </nav>
+        </header>
+        
+        <!-- Lista de tarefas excluídas -->
+        <div class="tasks-container">
+            <h2>Tarefas Excluídas</h2>
+            <ul id="deletedTaskList"></ul>
+        </div>
+        
+        <!-- Botões de ações -->
+        <div class="buttons">
+            <button id="deletePermanentlyButton">Excluir Selecionadas</button>
+            <button id="deleteAllDeletedTasksButton">Excluir Todas</button>
+            <button id="restoreSelectedButton">Restaurar Selecionadas</button>
+            <button id="restoreAllButton">Restaurar Todas</button>
+        </div>
+    </main>
+
+    <script src="scriptListaTarefa.js"></script>
+</body>
+</html>
